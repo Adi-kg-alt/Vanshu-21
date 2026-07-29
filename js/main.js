@@ -150,19 +150,19 @@ function getParticlePalette() {
    3. Ambient falling favorites
    -------------------------------------------------------------------------- */
 const fallingItems = [
-  { name: 'heart', src: 'Assets/icons/heart.svg' },
-  { name: 'strawberry', src: 'Assets/icons/strawberry.svg' },
-  { name: 'lychee', src: 'Assets/icons/lychee.svg' },
-  { name: 'fries', src: 'Assets/icons/fries.svg' },
-  { name: 'momos', src: 'Assets/icons/momos.svg' },
-  { name: 'paneer tandoori pizza', src: 'Assets/icons/paneer-tandoori-pizza.svg' },
-  { name: 'rajma chawal', src: 'Assets/icons/rajma-chawal.svg' },
-  { name: 'KitKat', src: 'Assets/icons/kitkat.svg' },
-  { name: 'chole bhature', src: 'Assets/icons/chole-bhature.svg' },
-  { name: 'cookies', src: 'Assets/icons/cookies.svg' },
-  { name: 'sunflower', src: 'Assets/icons/sunflower.svg' },
-  { name: 'rose', src: 'Assets/icons/rose.svg' },
-  { name: 'pasta', src: 'Assets/icons/pasta.svg' }
+  { name: 'heart', src: 'Assets-optimized/icons/heart.svg' },
+  { name: 'strawberry', src: 'Assets-optimized/icons/strawberry.svg' },
+  { name: 'lychee', src: 'Assets-optimized/icons/lychee.svg' },
+  { name: 'fries', src: 'Assets-optimized/icons/fries.svg' },
+  { name: 'momos', src: 'Assets-optimized/icons/momos.svg' },
+  { name: 'paneer tandoori pizza', src: 'Assets-optimized/icons/paneer-tandoori-pizza.svg' },
+  { name: 'rajma chawal', src: 'Assets-optimized/icons/rajma-chawal.svg' },
+  { name: 'KitKat', src: 'Assets-optimized/icons/kitkat.svg' },
+  { name: 'chole bhature', src: 'Assets-optimized/icons/chole-bhature.svg' },
+  { name: 'cookies', src: 'Assets-optimized/icons/cookies.svg' },
+  { name: 'sunflower', src: 'Assets-optimized/icons/sunflower.svg' },
+  { name: 'rose', src: 'Assets-optimized/icons/rose.svg' },
+  { name: 'pasta', src: 'Assets-optimized/icons/pasta.svg' }
 ];
 
 function initFallingIcons() {
@@ -302,49 +302,49 @@ function initAudioPlayer() {
    7. Gallery Data & Filmstrip Carousel Rendering
    -------------------------------------------------------------------------- */
 const coupleImages = [
-  { src: 'Assets/Couple/1778002470934~6.png', caption: 'Sweet Moments Together 💕' },
-  { src: 'Assets/Couple/1778043561655.png', caption: 'Your Beautiful Smile ✨' },
-  { src: 'Assets/Couple/file_00000000956871faaabeb746616d6511~3.png', caption: 'Unforgettable Days 🌸' },
-  { src: 'Assets/Couple/IMG-20260131-WA0087.jpg', caption: 'Side by Side 💑' },
-  { src: 'Assets/Couple/IMG-20260505-WA0006.jpg', caption: 'Precious Memories 💖' },
-  { src: 'Assets/Couple/IMG-20260505-WA0027.jpg', caption: 'My Favorite Place 🥰' },
-  { src: 'Assets/Couple/PXL_20260504_131017758.MP.jpg', caption: 'Golden Moments ☀️' },
-  { src: 'Assets/Couple/PXL_20260504_140220282.MP.jpg', caption: 'Laughter & Love 🌷' },
-  { src: 'Assets/Couple/Snapchat-124408248.jpg', caption: 'Pure Magic ✨' },
-  { src: 'Assets/Couple/Snapchat-1560447396.jpg', caption: 'Forever Yours 💛' },
-  { src: 'Assets/Couple/IMG-20250329-WA0072.jpg', caption: 'A Memory Worth Keeping' },
-  { src: 'Assets/Couple/PXL_20251004_062149905.MP.jpg', caption: 'Just Us' },
-  { src: 'Assets/Couple/PXL_20251004_062157525.MP.jpg', caption: 'Still My Favorite' },
-  { src: 'Assets/Couple/Screenshot_20251005-163047~2.png', caption: 'A Tiny Time Capsule' },
-  { src: 'Assets/Couple/VID-20260505-WA0039.mp4', type: 'video', caption: 'One More Sweet Moment' },
-  { src: 'Assets/Couple/VID-20260505-WA0040.mp4', type: 'video', caption: 'Us, In Motion' },
-  { src: 'Assets/others/20260213_031939-COLLAGE.jpg', caption: 'Collage of Us 📸' },
-  { src: 'Assets/others/PXL_20260504_132034363.MP.jpg', caption: 'Together Always 💫' }
+  { src: 'Assets-optimized/Couple/1778002470934~6.webp', width: 788, height: 1400, caption: 'Sweet Moments Together 💕' },
+  { src: 'Assets-optimized/Couple/1778043561655.webp', width: 788, height: 1400, caption: 'Your Beautiful Smile ✨' },
+  { src: 'Assets-optimized/Couple/file_00000000956871faaabeb746616d6511~3.webp', width: 1050, height: 1185, caption: 'Unforgettable Days 🌸' },
+  { src: 'Assets-optimized/Couple/IMG-20260131-WA0087.webp', width: 1400, height: 788, caption: 'Side by Side 💑' },
+  { src: 'Assets-optimized/Couple/IMG-20260505-WA0006.webp', width: 720, height: 1280, caption: 'Precious Memories 💖' },
+  { src: 'Assets-optimized/Couple/IMG-20260505-WA0027.webp', width: 787, height: 1400, caption: 'My Favorite Place 🥰' },
+  { src: 'Assets-optimized/Couple/PXL_20260504_131017758.MP.webp', width: 788, height: 1400, caption: 'Golden Moments ☀️' },
+  { src: 'Assets-optimized/Couple/PXL_20260504_140220282.MP.webp', width: 788, height: 1400, caption: 'Laughter & Love 🌷' },
+  { src: 'Assets-optimized/Couple/Snapchat-124408248.webp', width: 788, height: 1400, caption: 'Pure Magic ✨' },
+  { src: 'Assets-optimized/Couple/Snapchat-1560447396.webp', width: 788, height: 1400, caption: 'Forever Yours 💛' },
+  { src: 'Assets-optimized/Couple/IMG-20250329-WA0072.webp', width: 853, height: 1280, caption: 'A Memory Worth Keeping' },
+  { src: 'Assets-optimized/Couple/PXL_20251004_062149905.MP.webp', width: 788, height: 1400, caption: 'Just Us' },
+  { src: 'Assets-optimized/Couple/PXL_20251004_062157525.MP.webp', width: 788, height: 1400, caption: 'Still My Favorite' },
+  { src: 'Assets-optimized/Couple/Screenshot_20251005-163047~2.webp', width: 630, height: 1400, caption: 'A Tiny Time Capsule' },
+  { src: 'Assets-optimized/Couple/VID-20260505-WA0039.mp4', type: 'video', caption: 'One More Sweet Moment' },
+  { src: 'Assets-optimized/Couple/VID-20260505-WA0040.mp4', type: 'video', caption: 'Us, In Motion' },
+  { src: 'Assets-optimized/others/20260213_031939-COLLAGE.webp', width: 675, height: 1200, caption: 'Collage of Us 📸' },
+  { src: 'Assets-optimized/others/PXL_20260504_132034363.MP.webp', width: 1200, height: 802, caption: 'Together Always 💫' }
 ];
 
 const herImages = [
-  { src: 'Assets/her-pics/1780470634941.png', type: 'image', caption: 'Radiant Miss Delhi ✨' },
-  { src: 'Assets/her-pics/file_000000005c7c7209b8574dbd6a0a1085.png', type: 'image', caption: 'Effortlessly Gorgeous 🌸' },
-  { src: 'Assets/her-pics/file_0000000075447206a740e85f00e3b48b.png', type: 'image', caption: 'Those Sparkling Eyes 💖' },
-  { src: 'Assets/her-pics/file_00000000b2587207bc71e87bdbe1252e.png', type: 'image', caption: 'Cutest Mood 🥰' },
-  { src: 'Assets/her-pics/file_00000000b954720cb726419105ad72bf.png', type: 'image', caption: 'Sunshine in Girl Form ☀️' },
-  { src: 'Assets/her-pics/file_00000000bb14720cadb666ecbfb7f947.png', type: 'image', caption: 'Elegance & Grace 🌹' },
-  { src: 'Assets/her-pics/IMG-20260130-WA0116.jpg', type: 'image', caption: 'Sweetest Smile 😊' },
-  { src: 'Assets/her-pics/IMG-20260315-WA0003.jpg', type: 'image', caption: 'Breathtaking 💫' },
-  { src: 'Assets/her-pics/IMG-20260404-WA0013.jpg', type: 'image', caption: 'Lovely Vibes 🌷' },
-  { src: 'Assets/her-pics/IMG-20260511-WA0137.jpg', type: 'image', caption: 'Precious Soul 👑' },
-  { src: 'Assets/her-pics/IMG-20250106-WA0028.jpg', type: 'image', caption: 'A Beautiful Beginning' },
-  { src: 'Assets/her-pics/IMG-20250223-WA0028.jpg', type: 'image', caption: 'Soft Smile' },
-  { src: 'Assets/her-pics/IMG-20250315-WA0013.jpg', type: 'image', caption: 'Lovely, Always' },
-  { src: 'Assets/her-pics/IMG-20250329-WA0024.jpg', type: 'image', caption: 'Her Kind of Magic' },
-  { src: 'Assets/her-pics/IMG-20250730-WA0004.jpg', type: 'image', caption: 'Birthday Glow' },
-  { src: 'Assets/her-pics/IMG-20250907-WA0039.jpg', type: 'image', caption: 'Golden Hour Girl' },
-  { src: 'Assets/her-pics/IMG-20251020-WA0018.jpg', type: 'image', caption: 'Quietly Stunning' },
-  { src: 'Assets/her-pics/IMG-20251022-WA0035.jpg', type: 'image', caption: 'The Prettiest View' },
-  { src: 'Assets/her-pics/IMG-20251026-WA0029.jpg', type: 'image', caption: 'A Whole Mood' },
-  { src: 'Assets/her-pics/Screenshot 2026-07-29 031128.png', type: 'image', caption: 'Captured Beauty 📷' },
-  { src: 'Assets/her-pics/Snapchat-143382591.mp4', type: 'video', caption: 'Playful Moments 🎥' },
-  { src: 'Assets/her-pics/Snapchat-53574011.jpg', type: 'image', caption: 'My Favorite Girl 💛' }
+  { src: 'Assets-optimized/her-pics/1780470634941.webp', width: 788, height: 1400, type: 'image', caption: 'Radiant Miss Delhi ✨' },
+  { src: 'Assets-optimized/her-pics/file_000000005c7c7209b8574dbd6a0a1085.webp', width: 788, height: 1400, type: 'image', caption: 'Effortlessly Gorgeous 🌸' },
+  { src: 'Assets-optimized/her-pics/file_0000000075447206a740e85f00e3b48b.webp', width: 788, height: 1400, type: 'image', caption: 'Those Sparkling Eyes 💖' },
+  { src: 'Assets-optimized/her-pics/file_00000000b2587207bc71e87bdbe1252e.webp', width: 1120, height: 1400, type: 'image', caption: 'Cutest Mood 🥰' },
+  { src: 'Assets-optimized/her-pics/file_00000000b954720cb726419105ad72bf.webp', width: 1254, height: 1254, type: 'image', caption: 'Sunshine in Girl Form ☀️' },
+  { src: 'Assets-optimized/her-pics/file_00000000bb14720cadb666ecbfb7f947.webp', width: 1254, height: 1254, type: 'image', caption: 'Elegance & Grace 🌹' },
+  { src: 'Assets-optimized/her-pics/IMG-20260130-WA0116.webp', width: 787, height: 1400, type: 'image', caption: 'Sweetest Smile 😊' },
+  { src: 'Assets-optimized/her-pics/IMG-20260315-WA0003.webp', width: 788, height: 1400, type: 'image', caption: 'Breathtaking 💫' },
+  { src: 'Assets-optimized/her-pics/IMG-20260404-WA0013.webp', width: 933, height: 1400, type: 'image', caption: 'Lovely Vibes 🌷' },
+  { src: 'Assets-optimized/her-pics/IMG-20260511-WA0137.webp', width: 788, height: 1400, type: 'image', caption: 'Precious Soul 👑' },
+  { src: 'Assets-optimized/her-pics/IMG-20250106-WA0028.webp', width: 1050, height: 1400, type: 'image', caption: 'A Beautiful Beginning' },
+  { src: 'Assets-optimized/her-pics/IMG-20250223-WA0028.webp', width: 1400, height: 787, type: 'image', caption: 'Soft Smile' },
+  { src: 'Assets-optimized/her-pics/IMG-20250315-WA0013.webp', width: 1400, height: 788, type: 'image', caption: 'Lovely, Always' },
+  { src: 'Assets-optimized/her-pics/IMG-20250329-WA0024.webp', width: 787, height: 1400, type: 'image', caption: 'Her Kind of Magic' },
+  { src: 'Assets-optimized/her-pics/IMG-20250730-WA0004.webp', width: 1050, height: 1400, type: 'image', caption: 'Birthday Glow' },
+  { src: 'Assets-optimized/her-pics/IMG-20250907-WA0039.webp', width: 788, height: 1400, type: 'image', caption: 'Golden Hour Girl' },
+  { src: 'Assets-optimized/her-pics/IMG-20251020-WA0018.webp', width: 1050, height: 1400, type: 'image', caption: 'Quietly Stunning' },
+  { src: 'Assets-optimized/her-pics/IMG-20251022-WA0035.webp', width: 1050, height: 1400, type: 'image', caption: 'The Prettiest View' },
+  { src: 'Assets-optimized/her-pics/IMG-20251026-WA0029.webp', width: 1050, height: 1400, type: 'image', caption: 'A Whole Mood' },
+  { src: 'Assets-optimized/her-pics/Screenshot 2026-07-29 031128.webp', width: 605, height: 1074, type: 'image', caption: 'Captured Beauty 📷' },
+  { src: 'Assets-optimized/her-pics/Snapchat-143382591.mp4', type: 'video', caption: 'Playful Moments 🎥' },
+  { src: 'Assets-optimized/her-pics/Snapchat-53574011.webp', width: 788, height: 1400, type: 'image', caption: 'My Favorite Girl 💛' }
 ];
 
 let allMediaList = [];
@@ -389,9 +389,11 @@ function buildFilmstrip(trackId, items) {
         video.currentTime = 0;
       });
     } else {
+      const w = item.width || 788;
+      const h = item.height || 1400;
       card.innerHTML = `
         <div class="gallery-media-frame">
-          <img class="gallery-card-media" src="${item.src}" alt="${item.caption}" loading="lazy" decoding="async" />
+          <img class="gallery-card-media" src="${item.src}" alt="${item.caption}" width="${w}" height="${h}" loading="lazy" decoding="async" />
         </div>
         <div class="gallery-card-caption">${item.caption}</div>`;
     }
@@ -598,25 +600,33 @@ function triggerConfetti() {
    -------------------------------------------------------------------------- */
 const flashcardsData = [
   {
-    src: 'Assets/others/20260213_031939-COLLAGE.jpg',
+    src: 'Assets-optimized/others/20260213_031939-COLLAGE.webp',
+    width: 675,
+    height: 1200,
     badge: 'Keepsake #1',
     title: 'Our Collage of Love 📸',
     desc: 'A vibrant mosaic of sweet memories, silly dates, and unforgettable laughter.'
   },
   {
-    src: 'Assets/others/IMG-20260131-WA0092.jpg',
+    src: 'Assets-optimized/others/IMG-20260131-WA0092.webp',
+    width: 675,
+    height: 1200,
     badge: 'Keepsake #2',
     title: 'Roses for My Rose 🌹',
     desc: 'As timeless and captivating as your smile, my dearest Miss Delhi.'
   },
   {
-    src: 'Assets/others/IMG_20260505_080237_594.webp',
+    src: 'Assets-optimized/others/IMG_20260505_080237_594.webp',
+    width: 675,
+    height: 1200,
     badge: 'Keepsake #3',
     title: 'Sunflower Sunshine 🌻',
     desc: 'Bringing warm golden energy and endless brightness into my life.'
   },
   {
-    src: 'Assets/others/PXL_20260504_132034363.MP.jpg',
+    src: 'Assets-optimized/others/PXL_20260504_132034363.MP.webp',
+    width: 1200,
+    height: 802,
     badge: 'Keepsake #4',
     title: 'Side by Side Forever 💫',
     desc: 'Hand in hand through every journey, today and for all the tomorrows.'
@@ -636,7 +646,7 @@ function initFlashcards() {
     card.innerHTML = `
       <span class="flashcard-badge">${item.badge}</span>
       <div class="flashcard-img-wrap">
-        <img class="flashcard-img" src="${item.src}" alt="${item.title}" loading="lazy" decoding="async" />
+        <img class="flashcard-img" src="${item.src}" alt="${item.title}" width="${item.width}" height="${item.height}" loading="lazy" decoding="async" />
       </div>
       <div class="flashcard-body">
         <h3 class="flashcard-title">${item.title}</h3>

@@ -1,0 +1,15 @@
+Falling icon assets used by this site
+
+OpenMoji icons
+- Source: https://openmoji.org/
+- License: CC BY-SA 4.0
+- Local files: heart.svg, strawberry.svg, fries.svg, momos.svg,
+  paneer-tandoori-pizza.svg, rajma-chawal.svg, kitkat.svg, cookies.svg,
+  sunflower.svg, rose.svg, pasta.svg
+- Notes: Food names are used as birthday-site labels; kitkat.svg is a generic
+  chocolate bar icon, not official KitKat brand artwork.
+
+SVG Repo icons
+- Source: https://www.svgrepo.com/
+- License shown by SVG Repo for these downloaded assets: CC0
+- Local files: lychee.svg, chole-bhature.svg
