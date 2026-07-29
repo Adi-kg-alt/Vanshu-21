@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 21st Birthday, Vanshika! 🌸 | My Miss Delhi</title>
+  <meta name="description" content="A dreamy birthday celebration website dedicated to Vanshika — My Miss Delhi." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body data-theme="blush">
+
+  <canvas id="floating-canvas"></canvas>
+  <div class="falling-icons" id="falling-icons" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Theme Switcher -->
+  <button class="theme-switcher" id="theme-switcher" type="button" aria-label="Change background theme">
+    <span class="theme-switcher-dot" aria-hidden="true"></span>
+    <span class="theme-switcher-label" id="theme-switcher-label">Garden</span>
+  </button>
+
+  <!-- Audio Widget -->
+  <div class="audio-player-widget">
+    <div class="audio-tooltip" id="audio-tooltip">Play Background Music 🎵</div>
+    <button class="audio-btn" id="audio-toggle" aria-label="Toggle background music">
+      <span class="music-note">🎵</span>
+    </button>
+    <audio id="bg-audio" loop preload="auto">
+      <source src="audio/song.mp3" type="audio/mpeg" />
+      <source src="audio/music.mp3" type="audio/mpeg" />
+      <source src="audio/bgm.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!-- Nav Dots -->
+  <nav class="nav-dots" aria-label="Section Navigation">
+    <a href="#hero" class="nav-dot active" data-section="hero"><span class="nav-dot-tooltip">Hero</span></a>
+    <a href="#story" class="nav-dot" data-section="story"><span class="nav-dot-tooltip">Our Story</span></a>
+    <a href="#couple-gallery" class="nav-dot" data-section="couple-gallery"><span class="nav-dot-tooltip">Us Together</span></a>
+    <a href="#her-gallery" class="nav-dot" data-section="her-gallery"><span class="nav-dot-tooltip">Her Moods</span></a>
+    <a href="#favies" class="nav-dot" data-section="favies"><span class="nav-dot-tooltip">Her Favies</span></a>
+    <a href="#jhula" class="nav-dot" data-section="jhula"><span class="nav-dot-tooltip">Vanshu's Swing</span></a>
+    <a href="#taurus" class="nav-dot" data-section="taurus"><span class="nav-dot-tooltip">Taurus Essence</span></a>
+    <a href="#countdown" class="nav-dot" data-section="countdown"><span class="nav-dot-tooltip">Celebration</span></a>
+    <a href="#love-letter" class="nav-dot" data-section="love-letter"><span class="nav-dot-tooltip">Love Letter</span></a>
+    <a href="#flashcards" class="nav-dot" data-section="flashcards"><span class="nav-dot-tooltip">Flashcards</span></a>
+  </nav>
+
+  <!-- ===== 1. HERO ===== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span>✨ Celebrating 21 Magical Years ✨</span></div>
+      <h1 class="hero-title" id="hero-headline">
+        Happy 21st Birthday, <span class="name-highlight">Vanshika</span>
+      </h1>
+      <p class="hero-subtext" id="hero-subtext">"My Miss Delhi. The most beautiful girl on Earth — for me."</p>
+      <div>
+        <a href="#story" class="hero-scroll-cue">
+          <span>Scroll to open your gift 💖</span>
+          <div class="scroll-arrow">↓</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. STORY ===== -->
+  <section id="story">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Our Journey</span>
+        <h2 class="section-title">Two Years & Beyond</h2>
+        <p class="section-desc">Every moment with you feels like a page from a story written in the stars.</p>
+      </div>
+      <div class="story-grid">
+        <div class="story-block reveal-up">
+          <div class="story-content glass-card">
+            <div class="story-tag">Chapter I • May 2024</div>
+            <h3 class="story-text">"The day I met you was a special day — two years ago in May."</h3>
+            <p class="story-subtext">From that very first glance in Delhi, everything changed. You brought warmth, laughter, and a sweet sense of home into my life.</p>
+          </div>
+          <div class="story-image-wrap">
+            <img class="story-image" src="Assets/Couple/PXL_20260504_131017758.MP.jpg" alt="Adi and Vanshika Together" loading="lazy" />
+          </div>
+        </div>
+        <div class="story-block reveal-up">
+          <div class="story-image-wrap">
+            <img class="story-image" src="Assets/Couple/PXL_20260504_140220282.MP.jpg" alt="Vanshika 21st Birthday" loading="lazy" />
+          </div>
+          <div class="story-content glass-card">
+            <div class="story-tag">Chapter II • July 30</div>
+            <h3 class="story-text">"But the most precious day was today, 21 years ago, when God gifted you to this world... to be my precious girl."</h3>
+            <p class="story-subtext">21 years of grace, warmth, and beauty. I thank the universe every day for bringing you into my world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. COUPLE GALLERY — Filmstrip Carousel ===== -->
+  <section id="couple-gallery" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Us Together</span>
+        <h2 class="section-title">Precious Moments Side by Side 💑</h2>
+        <p class="section-desc">A collection of our laughs, adventures, and memories built hand in hand.</p>
+      </div>
+    </div>
+    <div class="gallery-section-wrap">
+      <div class="gallery-scroll-track" id="couple-gallery-track"></div>
+      <div class="scroll-hint">
+        <button class="scroll-hint-btn" data-track="couple-gallery-track" data-dir="left" aria-label="Scroll left">❮</button>
+        <span class="scroll-hint-label">← swipe or drag →</span>
+        <button class="scroll-hint-btn" data-track="couple-gallery-track" data-dir="right" aria-label="Scroll right">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. HER GALLERY — Filmstrip Carousel ===== -->
+  <section id="her-gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Her Portrait</span>
+        <h2 class="section-title">The Many Moods of My Miss Delhi ✨</h2>
+        <p class="section-desc">From her radiant smile to her quiet elegance — every mood is pure magic.</p>
+      </div>
+    </div>
+    <div class="gallery-section-wrap">
+      <div class="gallery-scroll-track" id="her-gallery-track"></div>
+      <div class="scroll-hint">
+        <button class="scroll-hint-btn" data-track="her-gallery-track" data-dir="left" aria-label="Scroll left">❮</button>
+        <span class="scroll-hint-label">← swipe or drag →</span>
+        <button class="scroll-hint-btn" data-track="her-gallery-track" data-dir="right" aria-label="Scroll right">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. HER FAVIES ===== -->
+  <section class="favies-section" id="favies">
+    <div class="container">
+      <div class="favies-card glass-card reveal-up">
+        <span class="section-subtitle">Her Favies</span>
+        <h2 class="section-title">All the Little Things She Loves</h2>
+        <p class="favies-text">She likes strawberries, lychee, fries, momos, paneer tandoori pizza, rajma chawal, KitKat, chole bhature, cookies, sunflower, rose, and pasta.</p>
+        <div class="favies-food" aria-label="Her favourite foods">
+          <span class="favies-food-label">Her comfort-food order</span>
+          <div class="favies-grid">
+            <div class="favie"><img src="Assets/icons/strawberry.svg" alt="" /><span>Strawberries</span></div>
+            <div class="favie"><img src="Assets/icons/lychee.svg" alt="" /><span>Lychee</span></div>
+            <div class="favie"><img src="Assets/icons/fries.svg" alt="" /><span>Fries</span></div>
+            <div class="favie"><img src="Assets/icons/momos.svg" alt="" /><span>Momos</span></div>
+            <div class="favie"><img src="Assets/icons/paneer-tandoori-pizza.svg" alt="" /><span>Paneer Pizza</span></div>
+            <div class="favie"><img src="Assets/icons/rajma-chawal.svg" alt="" /><span>Rajma Chawal</span></div>
+            <div class="favie"><img src="Assets/icons/kitkat.svg" alt="" /><span>KitKat</span></div>
+            <div class="favie"><img src="Assets/icons/chole-bhature.svg" alt="" /><span>Chole Bhature</span></div>
+            <div class="favie"><img src="Assets/icons/cookies.svg" alt="" /><span>Cookies</span></div>
+            <div class="favie"><img src="Assets/icons/pasta.svg" alt="" /><span>Pasta</span></div>
+          </div>
+        </div>
+        <p class="favies-jhula">And she loves swings — her jhula is her happy place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. VANSHU'S SWING — SVG Redesign ===== -->
+  <section class="jhula-section" id="jhula">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Her Happy Place</span>
+        <h2 class="section-title">Vanshu's Swing 🧚‍♀️</h2>
+        <p class="section-desc">Because she loves swings more than anything — a magical one, just for her.</p>
+      </div>
+
+      <div class="swing-scene reveal-up">
+        <!-- Sparkle particles -->
+        <div class="swing-sparkle">🍪</div>
+        <div class="swing-sparkle">⭐</div>
+        <div class="swing-sparkle">🧚</div>
+        <div class="swing-sparkle">✨</div>
+        <div class="swing-sparkle">🌟</div>
+
+        <svg class="swing-svg" viewBox="0 0 500 480" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="seatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#a1887f"/>
+              <stop offset="50%" style="stop-color:#8d6e63"/>
+              <stop offset="100%" style="stop-color:#a1887f"/>
+            </linearGradient>
+            <linearGradient id="branchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#6d4c41"/>
+              <stop offset="50%" style="stop-color:#4e342e"/>
+              <stop offset="100%" style="stop-color:#6d4c41"/>
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+              <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Tree Branch -->
+          <rect class="swing-branch-shadow" x="48" y="38" width="404" height="22" />
+          <rect class="swing-branch" x="45" y="32" width="410" height="22" fill="url(#branchGrad)" />
+          <!-- Leaves on branch -->
+          <text x="70" y="38" class="swing-leaf">🍃</text>
+          <text x="140" y="30" class="swing-leaf" style="animation-delay:.4s">🌿</text>
+          <text x="250" y="36" class="swing-leaf" style="animation-delay:.8s">🍃</text>
+          <text x="340" y="30" class="swing-leaf" style="animation-delay:1.2s">🌿</text>
+          <text x="410" y="38" class="swing-leaf" style="animation-delay:1.6s">🍃</text>
+
+          <!-- The swaying group -->
+          <g class="swing-group">
+            <!-- Left Rope -->
+            <line class="swing-rope" x1="180" y1="54" x2="180" y2="340" />
+            <!-- Right Rope -->
+            <line class="swing-rope" x1="320" y1="54" x2="320" y2="340" />
+
+            <!-- Flower garlands on ropes -->
+            <text x="168" y="140" font-size="16">🌸</text>
+            <text x="168" y="220" font-size="16">🌺</text>
+            <text x="168" y="300" font-size="16">🌷</text>
+            <text x="308" y="160" font-size="16">🌹</text>
+            <text x="308" y="240" font-size="16">🌼</text>
+            <text x="308" y="310" font-size="16">🌸</text>
+
+            <!-- Wooden Seat -->
+            <rect class="swing-seat" x="160" y="340" width="180" height="18" />
+
+            <!-- Cookie Stars Fairy decorations on seat -->
+            <text x="172" y="338" font-size="18">🍪</text>
+            <text x="215" y="336" font-size="18">⭐</text>
+            <text x="258" y="336" font-size="18">🧚</text>
+            <text x="300" y="338" font-size="18">✨</text>
+
+            <!-- Figure on Swing -->
+            <text x="220" y="330" class="swing-figure" filter="url(#glow)">👸🏻</text>
+          </g>
+
+          <!-- Ground Flowers -->
+          <text x="60" y="460" font-size="22">🌻</text>
+          <text x="120" y="470" font-size="18">🌹</text>
+          <text x="350" y="465" font-size="18">🌷</text>
+          <text x="410" y="458" font-size="22">🌻</text>
+        </svg>
+      </div>
+
+      <div class="jhula-caption-card reveal-up">
+        <div class="jhula-caption-text">"Come sit with me on our swing, Miss Delhi. 💖"</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. TAURUS ===== -->
+  <section id="taurus">
+    <div class="container">
+      <div class="taurus-card glass-card reveal-up">
+        <div class="taurus-symbol">♉</div>
+        <h2 class="taurus-title">Taurus Essence • Grounded & Beautiful</h2>
+        <p class="taurus-poem">"Earthy, sensual, and deeply loving. Like a garden of sunflowers and blooming roses, she brings warmth, comfort, and luxury into every day."</p>
+        <div class="taurus-traits">
+          <span class="trait-badge">🌻 Sunflowers & Roses</span>
+          <span class="trait-badge">🌿 Comfort & Nature</span>
+          <span class="trait-badge">✨ Elegant Luxury</span>
+          <span class="trait-badge">💛 Fiercely Loyal & Loving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. COUNTDOWN ===== -->
+  <section class="countdown-section" id="countdown" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Special Moment</span>
+        <h2 class="section-title">July 30 • Her 21st Birthday</h2>
+      </div>
+      <div id="countdown-timer" class="reveal-up">
+        <p style="color:var(--text-muted);font-size:1.1rem;margin-bottom:20px;">Counting down every second to midnight July 30...</p>
+        <div class="countdown-container">
+          <div class="time-box"><div class="time-value" id="days">00</div><div class="time-label">Days</div></div>
+          <div class="time-box"><div class="time-value" id="hours">00</div><div class="time-label">Hours</div></div>
+          <div class="time-box"><div class="time-value" id="minutes">00</div><div class="time-label">Minutes</div></div>
+          <div class="time-box"><div class="time-value" id="seconds">00</div><div class="time-label">Seconds</div></div>
+        </div>
+      </div>
+      <div class="celebration-banner" id="celebration-banner">
+        <div class="celebration-title">IT'S HER DAY 🎉</div>
+        <div class="celebration-subtext">Happy 21st Birthday, Vanshika! Today the world celebrates you! 👑💖🎈</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. LOVE LETTER ===== -->
+  <section class="letter-section" id="love-letter">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">From My Heart</span>
+        <h2 class="section-title">A Love Letter to Vanshika</h2>
+      </div>
+      <div class="letter-card reveal-up">
+        <div class="letter-header">My Dearest Vanshika,</div>
+        <div class="letter-body">The day I met you was a special day — two years ago in May.
+
+But the most precious day was today, 21 years ago, when God gifted you to this world... to be my precious girl.
+
+You're the best thing that happens to me every year... no matter the LDR, the fights... you and me belong together. Love you the mosttt. Soulmate.</div>
+        <div class="letter-signature">— Adi</div>
+      </div>
+      <div class="grand-closing reveal-up">
+        <div class="love-tag">I love you, Miss Delhi 💛</div>
+        <div>
+          <button class="love-btn" id="love-burst-btn">
+            <span>Click For Endless Love & Confetti 🌸</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10. FLASHCARDS SECTION ===== -->
+  <section class="flashcards-section" id="flashcards" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Bonus Memories</span>
+        <h2 class="section-title">Flashcard Keepsakes 📸</h2>
+        <p class="section-desc">Special snapshot flashcards crafted just for you — tap any card to view in full resolution!</p>
+      </div>
+      <div class="flashcards-grid" id="flashcards-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Crafted with endless love for Vanshika's 21st Birthday • July 30 💖</p>
+    <p class="asset-credit">Falling icons: OpenMoji CC BY-SA 4.0 and SVG Repo CC0, saved locally.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <div class="lightbox-nav">
+      <button class="lightbox-btn" id="lightbox-prev">❮</button>
+      <button class="lightbox-btn" id="lightbox-next">❯</button>
+    </div>
+    <div class="lightbox-content">
+      <div id="lightbox-media-container"></div>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
